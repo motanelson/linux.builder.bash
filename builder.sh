@@ -6,7 +6,7 @@ read g
 dd if=/dev/zero of=$h bs=1M count=$g status=progress
 chmod 777 $h
 echo '.........................................'
-mkfs.ext2  $h
+mkfs.ext2 -F $h
 chmod 777 $h
 echo '.........................................'
 
